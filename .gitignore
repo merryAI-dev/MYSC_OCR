@@ -1,0 +1,53 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+.venv-*/
+venv/
+
+dist/
+build/
+*.egg-info/
+
+# Local runtime configuration and model/materialized OCR outputs.
+config.json
+models/
+output/
+tmp/
+*.log
+
+# PII-bearing local artifacts. These must not be committed.
+candidate_features_local.jsonl
+candidate_raw_map_local.jsonl
+kie_candidates_local.csv
+account_resolution_candidates.csv
+manual_autofill_review_queue.csv
+human_label_eval_details.csv
+*.xlsx
+*.zip
+
+# Local experiment notes that contain absolute paths or participant review rows.
+docs/2026-04-27-gs64-6bit-failure-postmortem.md
+docs/2026-04-29-mlx8-w8-union-fallback.md
+docs/superpowers/
+
+# Machine-local launchers and exploratory notes are not part of the public repo.
+Run_*.command
+DEEPSEEK_OCR_NOTES.md
+OCR_AUTORESEARCH_HANDOFF_*.md
+SETTLEMENT_OCRBENCH_*.md
+
+# Local one-off experiment scripts with hard-coded private artifact paths.
+scripts/build_deepseek_resolution.py
+scripts/build_gs64_failure_postmortem_doc.py
+scripts/run_gs64_recovery_loop.py
+scripts/run_mlx4bit_practical_eval.py
+scripts/run_union_fallback_pipeline.py
+tests/test_build_deepseek_resolution.py
+tests/test_run_gs64_recovery_loop.py
+tests/test_run_mlx4bit_practical_eval.py
+tests/test_run_union_fallback_pipeline.py

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hackathon-settlement-tool"
+version = "0.1.0"
+description = "Reusable CLI for organizing hackathon settlement documents and filling account numbers."
+requires-python = ">=3.10"
+dependencies = [
+  "openpyxl>=3.1",
+  "huggingface_hub>=1.0",
+]
+
+[project.optional-dependencies]
+local-ml = [
+  "torch",
+  "transformers",
+]
+chandra = [
+  "chandra-ocr",
+]
+chandra-hf = [
+  "chandra-ocr[hf]",
+]
+
+[project.scripts]
+settlement-tool = "settlement_tool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["settlement_tool*"]
+exclude = ["models*", "output*", "scripts*", "tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

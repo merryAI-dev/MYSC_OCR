@@ -1,0 +1,16 @@
+[
+  {
+    "source_name": "sample-bankbook.png",
+    "page_width": 1000,
+    "page_height": 1000,
+    "items": [
+      {
+        "label_text": "계좌번호",
+        "text_masked": "***-***-**6789",
+        "raw_text_local": "RAW_ACCOUNT_SENTINEL",
+        "bbox": [10, 20, 110, 50],
+        "confidence": 0.93
+      }
+    ]
+  }
+]

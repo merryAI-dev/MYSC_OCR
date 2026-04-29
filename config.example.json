@@ -1,0 +1,13 @@
+{
+  "withholding_workbook": "/path/to/withholding_workbook.xlsx",
+  "response_workbook": "/path/to/form_response_workbook.xlsx",
+  "payment_zip": "/path/to/payment_documents.zip",
+  "id_zip": "/path/to/id_documents.zip",
+  "bank_zip": "/path/to/bankbook_documents.zip",
+  "output_root": "/path/to/output_root",
+  "overrides": "",
+  "account_policy": {
+    "reranker_min_score": 10.0,
+    "reranker_min_margin": 3.0
+  }
+}
