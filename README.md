@@ -113,6 +113,12 @@ The 2026-04-29 loop improved the zero-FP account candidate extraction eval from 
 
 The release remained blocked by pending manual review, which is expected. See [docs/2026-04-29-pii-candidate-generation-wiki.md](docs/2026-04-29-pii-candidate-generation-wiki.md).
 
+## LLM Wiki
+
+The maintained project knowledge base lives in [wiki/index.md](wiki/index.md).
+
+Use it as the first stop for accumulated decisions, experiments, and open questions. The schema for future LLM agents is [AGENTS.md](AGENTS.md).
+
 ## Release Policy
 
 See [docs/release-policy.md](docs/release-policy.md).
@@ -124,4 +130,3 @@ Short version:
 - redacted reranker payloads are allowed
 - local raw maps are not release artifacts
 - bank name is review metadata, not the target PII label
-
